@@ -43,7 +43,7 @@ function validateItems(){
         document.forms["evenNumbers"]["secondNumber"].focus();
         return false;
     }
-    if (step == "" || isNaN(step)|| step < 0){
+    if (step == "" || isNaN(step)|| step <= 0){
         alert("Step must be filled in with a valid integer");
         document.forms["evenNumbers"]["step"].parentElement.className = "form-group has-error";
         document.forms["evenNumbers"]["step"].focus();
